@@ -10,7 +10,7 @@ export default function Hero() {
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/assets/video/hero.mp4" type="video/mp4" />
+        <source src="/assets/video/hero_2.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
