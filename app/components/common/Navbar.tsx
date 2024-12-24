@@ -62,13 +62,13 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="px-4 py-4 top-0 left-0 w-full z-30">
+    <nav className="px-4 py-4 top-0 left-0 w-full z-30 absolute">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold tracking-wide">
+        <Link href="/" className="text-2xl font-bold tracking-wide text-white">
           Viriditas
         </Link>
 
-        <div className="hidden md:flex space-x-10">
+        <div className="hidden md:flex space-x-10 text-white">
           {links.map((link) => (
             <div key={link.id} className="relative group">
               <Link href={link.link} className="flex items-center space-x-4">
@@ -99,9 +99,9 @@ export default function Navbar() {
             className={`focus:outline-none menu-button ${open ? "open" : ""}`}
             onClick={() => setOpen(!open)}
           >
-            <div className="line line1"></div>
-            <div className="line line2"></div>
-            <div className="line line3"></div>
+            <div className="line line1 text-white"></div>
+            <div className="line line2 text-white"></div>
+            <div className="line line3 text-white"></div>
           </button>
         </div>
       </div>
